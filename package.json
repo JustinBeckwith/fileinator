@@ -33,7 +33,7 @@
     "@commitlint/config-conventional": "^7.3.1",
     "codecov": "^3.1.0",
     "mocha": "^6.0.0",
-    "nyc": "^13.1.0",
+    "nyc": "^14.0.0",
     "semantic-release": "^15.13.3",
     "semistandard": "^13.0.1",
     "uuid": "^3.2.1"
