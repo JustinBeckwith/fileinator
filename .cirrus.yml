@@ -11,14 +11,8 @@ test_task:
       image: node:11
       image: node:10
       image: node:8
-      image: node:6
   install_script: npm install
   test_script: npm test
-
-commit_lint_task:
-  script:
-    - npm install
-    - npm run commitlint
 
 coverage_task:
   env:
@@ -33,10 +27,9 @@ publish_task:
   depends_on:
     - test_task
     - lint_task
-    - commit_lint_task
   environment:
     GITHUB_TOKEN: ENCRYPTED[2b11114754553f769266cb5f80b922c1e4be66fd4c25008c1810e1b95714de03461cb5359df782b7c15335e3c2054be1]
-    NPM_TOKEN: ENCRYPTED[0c331a8c6fdb5766af02b16ef6fa5ba0c7ee8db74a1515032db5e835c28e8a9f764e0b169f5082da7b098b383b1ff031]
+    NPM_TOKEN: ENCRYPTED[d6b69af024cc8db7b00e916f18cc0402747d7deb00b7bc96890b8dfef4d9a9fef4a778f2272e6fbf2cce673a1c5e5eee]
   script:
     - npm install
     - npx semantic-release

@@ -1,14 +1,13 @@
 {
   "name": "fileinator",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "A simple utility to generate files with a specified size and random content.",
   "main": "index.js",
   "scripts": {
     "lint": "semistandard",
-    "test": "nyc mocha",
+    "test": "c8 mocha",
     "fix": "semistandard --fix",
-    "codecov": "nyc report --reporter=json && codecov -f coverage/*.json",
-    "commitlint": "git log -1 --pretty=%B | commitlint"
+    "codecov": "c8 report --reporter=json && codecov -f coverage/*.json"
   },
   "repository": {
     "type": "git",
@@ -24,21 +23,19 @@
   },
   "homepage": "https://github.com/JustinBeckwith/fileinator#readme",
   "dependencies": {
-    "filesize-parser": "^1.4.2",
-    "progress": "^2.0.0",
-    "yargs": "^13.0.0"
+    "filesize-parser": "^1.5.0",
+    "progress": "^2.0.3",
+    "yargs": "^13.2.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-conventional": "^8.0.0",
-    "codecov": "^3.1.0",
-    "mocha": "^6.0.0",
-    "nyc": "^14.0.0",
-    "semantic-release": "^15.13.3",
+    "c8": "^5.0.1",
+    "codecov": "^3.5.0",
+    "mocha": "^6.1.4",
+    "semantic-release": "^15.13.18",
     "semistandard": "^13.0.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.3.2"
   },
   "engines": {
-    "node": ">=6.0"
+    "node": ">=8.0"
   }
 }
