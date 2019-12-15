@@ -32,7 +32,7 @@
     "codecov": "^3.5.0",
     "mocha": "^6.1.4",
     "semantic-release": "^15.13.18",
-    "semistandard": "^13.0.1",
+    "semistandard": "^14.0.0",
     "uuid": "^3.3.2"
   },
   "engines": {
