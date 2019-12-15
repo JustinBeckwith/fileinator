@@ -1,5 +1,5 @@
 container:
-  image: node:10
+  image: node:12
 
 lint_task:
   install_script: npm install
@@ -8,7 +8,8 @@ lint_task:
 test_task:
   container:
     matrix:
-      image: node:11
+      image: node:13
+      image: node:12
       image: node:10
       image: node:8
   install_script: npm install
@@ -25,8 +26,8 @@ coverage_task:
 publish_task:
   only_if: $CIRRUS_BRANCH == 'master'
   depends_on:
-    - test_task
-    - lint_task
+    - test
+    - lint
   environment:
     GITHUB_TOKEN: ENCRYPTED[2b11114754553f769266cb5f80b922c1e4be66fd4c25008c1810e1b95714de03461cb5359df782b7c15335e3c2054be1]
     NPM_TOKEN: ENCRYPTED[d6b69af024cc8db7b00e916f18cc0402747d7deb00b7bc96890b8dfef4d9a9fef4a778f2272e6fbf2cce673a1c5e5eee]
