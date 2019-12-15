@@ -10,9 +10,9 @@ require('yargs')
   .example('$0 make 2mb ./bigfile', 'Create a 2MB file named `bigfile` in the current directory.')
   .command('make <size> <path>', 'Make a big file', {}, function (argv) {
     console.log(`you want me to make a file that named ${argv.path} that's ${argv.size}`);
-    let size = sizeParser(argv.size);
+    const size = sizeParser(argv.size);
 
-    let bar = new ProgressBar('creating [:bar] :percent :etas', {
+    const bar = new ProgressBar('creating [:bar] :percent :etas', {
       complete: '=',
       incomplete: ' ',
       total: size
