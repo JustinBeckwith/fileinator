@@ -28,7 +28,7 @@
     "yargs": "^15.0.0"
   },
   "devDependencies": {
-    "c8": "^6.0.0",
+    "c8": "^7.0.0",
     "codecov": "^3.5.0",
     "mocha": "^6.1.4",
     "semantic-release": "^15.13.18",
