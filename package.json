@@ -30,7 +30,7 @@
   "devDependencies": {
     "c8": "^7.0.0",
     "codecov": "^3.5.0",
-    "mocha": "^6.1.4",
+    "mocha": "^7.0.0",
     "semantic-release": "^15.13.18",
     "semistandard": "^14.0.0",
     "uuid": "^3.3.2"
