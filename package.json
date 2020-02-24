@@ -33,7 +33,7 @@
     "mocha": "^7.0.0",
     "semantic-release": "^17.0.0",
     "semistandard": "^14.0.0",
-    "uuid": "^3.3.2"
+    "uuid": "^7.0.0"
   },
   "engines": {
     "node": ">=8.0"
