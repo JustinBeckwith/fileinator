@@ -2,7 +2,7 @@
   "name": "fileinator",
   "version": "0.0.0",
   "description": "A simple utility to generate files with a specified size and random content.",
-  "main": "index.js",
+  "main": "lib/fileinator.js",
   "scripts": {
     "lint": "semistandard",
     "test": "c8 mocha",
