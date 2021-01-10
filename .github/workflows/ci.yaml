@@ -36,6 +36,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: JustinBeckwith/linkinator-action@v1
+        with:
+          directoryListing: true
   release:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
