@@ -7,8 +7,7 @@
   "scripts": {
     "lint": "semistandard",
     "test": "c8 mocha",
-    "fix": "semistandard --fix",
-    "codecov": "c8 report --reporter=json && codecov -f coverage/*.json"
+    "fix": "semistandard --fix"
   },
   "repository": {
     "type": "git",
@@ -26,14 +25,13 @@
   "dependencies": {
     "filesize-parser": "^1.5.0",
     "progress": "^2.0.3",
-    "yargs": "^15.0.0"
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
     "c8": "^7.0.0",
-    "codecov": "^3.5.0",
     "mocha": "^8.0.0",
     "semantic-release": "^17.0.0",
-    "semistandard": "^14.0.0",
+    "semistandard": "^16.0.0",
     "uuid": "^8.0.0"
   },
   "engines": {

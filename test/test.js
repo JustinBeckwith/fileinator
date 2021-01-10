@@ -8,7 +8,7 @@ const uuid = require('uuid');
 
 describe('fileinator', function () {
   it('should generate the correctly sized file', function (done) {
-    var path = uuid.v4();
+    const path = uuid.v4();
     const size = sizeParser('20mb');
     fileinator.writeFile(size, path)
       .on('done', () => {
@@ -24,7 +24,7 @@ describe('fileinator', function () {
 
   it('should handle noneven chunk sizes', function (done) {
     const size = sizeParser('25mb');
-    var path = uuid.v4();
+    const path = uuid.v4();
     fileinator.writeFile(size, path)
       .on('done', () => {
         fs.stat(path, (err, stats) => {
@@ -39,8 +39,8 @@ describe('fileinator', function () {
 
   it('should report progress that adds up to the total', function (done) {
     const size = sizeParser('25mb');
-    var path = uuid.v4();
-    var bytesWritten = 0;
+    const path = uuid.v4();
+    let bytesWritten = 0;
     fileinator.writeFile(size, path)
       .on('progress', (data) => {
         bytesWritten += data.bytesWritten;
