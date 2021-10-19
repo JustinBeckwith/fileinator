@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 name: ci
 jobs:
@@ -39,7 +39,7 @@ jobs:
         with:
           directoryListing: true
   release:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: [test, lint]
     steps:
