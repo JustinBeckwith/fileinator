@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 'use strict';
-const fileinator = require('../lib/fileinator');
-const sizeParser = require('filesize-parser');
-const ProgressBar = require('progress');
+import fileinator from '../lib/fileinator.js';
+import sizeParser from 'filesize-parser';
+import ProgressBar from 'progress';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
 
-// eslint-disable-next-line
-require('yargs')
-  .usage('Usage: $0 <size> <path>')
+yargs(hideBin(process.argv)).usage('Usage: $0 <size> <path>')
   .example('$0 make 2mb ./bigfile', 'Create a 2MB file named `bigfile` in the current directory.')
   .command('make <size> <path>', 'Make a big file', {}, function (argv) {
     console.log(`you want me to make a file that named ${argv.path} that's ${argv.size}`);
@@ -27,4 +27,4 @@ require('yargs')
   })
   .help('h')
   .alias('h', 'help')
-  .argv;
+  .parse();
