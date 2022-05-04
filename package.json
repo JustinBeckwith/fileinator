@@ -2,8 +2,9 @@
   "name": "fileinator",
   "version": "0.0.0",
   "description": "A simple utility to generate files with a specified size and random content.",
-  "main": "lib/fileinator.js",
+  "exports": "./lib/fileinator.js",
   "typings": "fileinator.d.ts",
+  "type": "module",
   "scripts": {
     "lint": "semistandard",
     "test": "c8 mocha",
@@ -19,7 +20,7 @@
     "url": "https://github.com/JustinBeckwith/fileinator/issues"
   },
   "bin": {
-    "fileinator": "bin/fileinator-cli.js"
+    "fileinator": "./bin/fileinator-cli.js"
   },
   "homepage": "https://github.com/JustinBeckwith/fileinator#readme",
   "dependencies": {
@@ -29,12 +30,12 @@
   },
   "devDependencies": {
     "c8": "^7.0.0",
-    "mocha": "^9.0.0",
+    "mocha": "^10.0.0",
     "semantic-release": "^19.0.0",
     "semistandard": "^16.0.0",
     "uuid": "^8.0.0"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   }
 }
