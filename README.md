@@ -44,7 +44,4 @@ See more in the [examples](examples/).
 [MIT License](LICENSE.md)
 
 ## Questions?
-Feel free to submit an issue on the repository, or find me at [@JustinBeckwith](http://twitter.com/JustinBeckwith)
-
-
-
+Feel free to submit an issue on the repository!
