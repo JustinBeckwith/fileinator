@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "semistandard",
     "test": "c8 mocha",
-    "fix": "semistandard --fix"
+    "fix": "semistandard --fix",
+    "coverage": "c8 report --reporter=json"
   },
   "repository": {
     "type": "git",
