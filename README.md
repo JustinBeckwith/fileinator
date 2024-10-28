@@ -8,11 +8,12 @@
 
 ![inator](http://i.imgur.com/Hc9u9wz.jpg)
 
-### Installation
+## Installation
 
 `npm install -g fileinator`
 
-### Usage
+## Usage
+
 You can use the fileinator as a command line tool or as a library.  To use as a command line tool:
 
 `fileinator make 10gb ./bigfile`
@@ -40,7 +41,9 @@ fileinator.writeFile(size, path)
 See more in the [examples](examples/).
 
 ## License
+
 [MIT License](LICENSE.md)
 
 ## Questions?
+
 Feel free to submit an issue on the repository!
