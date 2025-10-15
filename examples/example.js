@@ -9,9 +9,11 @@ const sizeParser = require('filesize-parser');
 const size = sizeParser('20mb');
 const path = './data.dat';
 
-fileinator.writeFile(size, path)
+fileinator
+  .writeFile(size, path)
   .on('progress', (data) => {
     console.log(`${data.bytesWritten} of ${size} written`);
-  }).on('done', () => {
+  })
+  .on('done', () => {
     console.log(`Complete: ${path}`);
   });
