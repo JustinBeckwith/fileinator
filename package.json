@@ -1,6 +1,6 @@
 {
   "name": "fileinator",
-  "version": "4.0.0",
+  "version": "3.0.1",
   "description": "A simple utility to generate files with a specified size and random content.",
   "exports": "./lib/fileinator.js",
   "typings": "fileinator.d.ts",
