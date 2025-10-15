@@ -1,14 +1,14 @@
 {
   "name": "fileinator",
-  "version": "0.0.0",
+  "version": "3.0.1",
   "description": "A simple utility to generate files with a specified size and random content.",
   "exports": "./lib/fileinator.js",
   "typings": "fileinator.d.ts",
   "type": "module",
   "scripts": {
-    "lint": "semistandard",
+    "lint": "biome check .",
     "test": "c8 mocha",
-    "fix": "semistandard --fix",
+    "fix": "biome check --write .",
     "coverage": "c8 report --reporter=json"
   },
   "repository": {
@@ -30,10 +30,9 @@
     "yargs": "^18.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.6",
     "c8": "^10.0.0",
     "mocha": "^11.0.0",
-    "semantic-release": "^24.0.0",
-    "semistandard": "^17.0.0",
     "uuid": "^13.0.0"
   },
   "engines": {

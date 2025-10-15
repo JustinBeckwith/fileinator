@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/fileinator.svg)](https://www.npmjs.org/package/fileinator)
 [![codecov](https://codecov.io/gh/JustinBeckwith/fileinator/branch/main/graph/badge.svg)](https://codecov.io/gh/JustinBeckwith/fileinator)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![code style: biome](https://img.shields.io/badge/code_style-biome-60a5fa?logo=biome)](https://biomejs.dev/)
 
 > Behold my latest inator! Generate files full of random bytes.  Good for tests.
 

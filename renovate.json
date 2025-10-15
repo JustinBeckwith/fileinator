@@ -1,17 +1,11 @@
 {
-  "extends": [
-    "config:base",
-    "docker:disable",
-    ":disableDependencyDashboard"
-  ],
+  "extends": ["config:base", "docker:disable", ":disableDependencyDashboard"],
   "pinVersions": false,
   "rebaseStalePrs": true,
   "lockFileMaintenance": {
     "enabled": true,
     "recreateClosed": true,
-    "schedule": [
-      "before 10am on tuesday"
-    ]
+    "schedule": ["before 10am on tuesday"]
   },
   "gitAuthor": null
 }
