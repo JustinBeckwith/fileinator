@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.0.0](https://github.com/JustinBeckwith/fileinator/compare/fileinator-v3.0.1...fileinator-v4.0.0) (2025-10-15)
+## [4.0.0](https://github.com/JustinBeckwith/fileinator/compare/v2.0.2...HEAD) (2025-10-15)
 
 
 ### ⚠ BREAKING CHANGES
