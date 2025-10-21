@@ -3,7 +3,7 @@
   "pinVersions": false,
   "rebaseStalePrs": true,
   "lockFileMaintenance": {
-    "enabled": true,
+    "enabled": false,
     "recreateClosed": true,
     "schedule": ["before 10am on tuesday"]
   },
