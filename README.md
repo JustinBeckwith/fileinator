@@ -4,6 +4,8 @@
 [![codecov](https://codecov.io/gh/JustinBeckwith/fileinator/branch/main/graph/badge.svg)](https://codecov.io/gh/JustinBeckwith/fileinator)
 [![code style: biome](https://img.shields.io/badge/code_style-biome-60a5fa?logo=biome)](https://biomejs.dev/)
 
+![fileinator](https://raw.githubusercontent.com/JustinBeckwith/fileinator/main/site/fileinator.webp)
+
 > Behold my latest inator! Generate files full of random bytes.  Good for tests.
 
 ![inator](http://i.imgur.com/Hc9u9wz.jpg)
