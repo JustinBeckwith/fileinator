@@ -8,8 +8,6 @@
 
 > Behold my latest inator! Generate files full of random bytes.  Good for tests.
 
-![inator](http://i.imgur.com/Hc9u9wz.jpg)
-
 ## Installation
 
 `npm install -g fileinator`
