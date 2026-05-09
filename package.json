@@ -7,9 +7,9 @@
   "type": "module",
   "scripts": {
     "lint": "biome check .",
-    "test": "c8 mocha",
+    "test": "node --test",
     "fix": "biome check --write .",
-    "coverage": "c8 report --reporter=json"
+    "coverage": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -31,8 +31,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.6",
-    "c8": "^11.0.0",
-    "mocha": "^11.0.0",
     "uuid": "^14.0.0"
   },
   "engines": {
