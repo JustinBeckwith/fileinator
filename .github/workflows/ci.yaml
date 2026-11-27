@@ -16,11 +16,12 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: node --version
-      - run: npm install
+      - run: npm ci
       - run: npm test
       - run: npm run coverage
       - uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
         with:
+          files: coverage/lcov.info
           name: actions ${{ matrix.node }}
           fail_ci_if_error: false
   lint:
@@ -30,7 +31,7 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: 26
-      - run: npm install
+      - run: npm ci
       - run: npm run lint
   links:
     runs-on: ubuntu-latest

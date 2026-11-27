@@ -7,9 +7,10 @@
   "type": "module",
   "scripts": {
     "lint": "biome check .",
-    "test": "c8 mocha",
+    "test": "node --test",
     "fix": "biome check --write .",
-    "coverage": "c8 report --reporter=json"
+    "precoverage": "node --input-type=module -e \"import { mkdirSync } from 'node:fs'; mkdirSync('coverage', { recursive: true });\"",
+    "coverage": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.6",
-    "c8": "^12.0.0",
-    "mocha": "^12.0.0",
     "uuid": "^14.0.0"
   },
   "engines": {
