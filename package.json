@@ -9,6 +9,7 @@
     "lint": "biome check .",
     "test": "node --test",
     "fix": "biome check --write .",
+    "precoverage": "node --input-type=module -e \"import { mkdirSync } from 'node:fs'; mkdirSync('coverage', { recursive: true });\"",
     "coverage": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=coverage/lcov.info"
   },
   "repository": {
